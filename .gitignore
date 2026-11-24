@@ -1,0 +1,12 @@
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.idea/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
