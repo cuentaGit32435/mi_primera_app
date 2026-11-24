@@ -1,0 +1,26 @@
+{
+  "name": "Flutter Web (Codespaces)",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "Flutter Web App",
+      "onAutoForward": "notify"
+    }
+  },
+  "remoteEnv": {
+    "PATH": "/home/vscode/flutter/bin:${containerEnv:PATH}"
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Dart-Code.flutter",
+        "Dart-Code.dart-code"
+      ],
+      "settings": {
+        "dart.flutterSdkPath": "/home/vscode/flutter"
+      }
+    }
+  }
+}
